@@ -31,13 +31,10 @@ const About = () => {
             with the latest news and announcements from the Dojo.
           </p>
         </div>
-        <div className="hidden lg:block mx-8 w-56 h-56 overflow-visible">
+        <div className="hidden lg:block mx-8 w-56 h-56">
           <StaticImage
-            className="overflow-visible"
             imgStyle={{
               borderRadius: '1rem',
-              filter:
-                'drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1))',
             }}
             src="../images/spotlight.jpeg"
             alt="A cartoon of CoderDojo attendees"
