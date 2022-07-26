@@ -14,7 +14,12 @@ const Activities = () => {
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 text-justify px-4">
         <div className="flex flex-col space-y-4 items-center">
           <StaticImage
-            className="w-48 rounded-full outline outline-slate-200 outline-offset-8"
+            className="w-48 lg:w-44 overflow-visible"
+            imgStyle={{
+              borderRadius: '1rem',
+              filter:
+                'drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1))',
+            }}
             src="../images/scratch.jpg"
             alt="Scratch Logo"
           />
@@ -27,7 +32,12 @@ const Activities = () => {
         </div>
         <div className="flex flex-col space-y-4 items-center">
           <StaticImage
-            className="w-48 rounded-full outline outline-slate-200 outline-offset-8"
+            className="w-48 lg:w-44 overflow-visible"
+            imgStyle={{
+              borderRadius: '1rem',
+              filter:
+                'drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1))',
+            }}
             src="../images/webapp.jpg"
             alt="A website viewed on a tablet"
           />
@@ -40,7 +50,12 @@ const Activities = () => {
         </div>
         <div className="flex flex-col space-y-4 items-center">
           <StaticImage
-            className="w-48 rounded-full outline outline-slate-200 outline-offset-8"
+            className="w-48 lg:w-44 overflow-visible"
+            imgStyle={{
+              borderRadius: '1rem',
+              filter:
+                'drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1))',
+            }}
             src="../images/pi.jpg"
             alt="A Raspberry Pi circuit board"
           />
