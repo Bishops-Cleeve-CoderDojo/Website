@@ -66,7 +66,7 @@ const Activities = () => {
         instructions for hundreds of examples!
       </p>
       <a
-        href="https://zen.coderdojo.com/dojos/gb/cheltenham/bishops-cleeve-bishops-cleeve-library"
+        href="https://projects.raspberrypi.org/en/projects"
         target="_blank"
         rel="noreferrer"
         className="mt-4 text-white lg:mt-6 bg-[#ED684A] active:bg-pink-600 font-bold text-sm lg:text-base px-6 py-4 shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 tracking-wider rounded-full"

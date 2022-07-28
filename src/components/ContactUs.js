@@ -2,11 +2,11 @@ import React from 'react'
 
 const ContactUs = () => {
   return (
-    <section id="contact" className="p-8 flex flex-col items-center">
+    <section id="contact" className="p-8 flex flex-col items-center space-y-4">
       <h2>Contact Us</h2>
       <p>
-        If you'd like to get in touch, please send us a message via our
-        Facebook page, or email.
+        If you'd like to get in touch, please send us a message via our Facebook
+        page, or email.
       </p>
       <a
         href="https://www.facebook.com/BishopsCleeveCoderDojo/"
