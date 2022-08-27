@@ -19,9 +19,10 @@ const About = () => {
           </p>
           <p>
             Each session is a free and fun opportunity to learn about
-            programming, and to build something cool! Our volunteer mentors help
-            children follow the CoderDojo learning paths, guiding them through
-            the basics of coding and on to advanced topics.
+            programming, express your creativity and to build something cool!
+            Our volunteer mentors help children follow the CoderDojo learning
+            paths, guiding them through the basics of coding and on to advanced
+            topics.
           </p>
           <p>
             To book a place at an upcoming session, please click <a>here</a>.
