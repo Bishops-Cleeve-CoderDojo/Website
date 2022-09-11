@@ -12,7 +12,7 @@ const Faq = () => {
         <details>
           <summary className="text-lg">When does the Dojo run?</summary>
           <div className="ml-4 mt-2 text-sm">
-            <p className="">We run every other Satuarday, from 1-3pm.</p>
+            <p className="">We run every other Satuarday, from 12.30-2.30pm.</p>
             <p>
               {' '}
               Click{' '}
@@ -95,7 +95,7 @@ const Faq = () => {
             Yes, if your child is under the age of 13 you'll need to stay for
             the duration of the session.
           </p>
-          <p>
+          <p className="ml-4 mt-2 text-sm">
             For children age 13 and over, it is recommended that a
             parent/guardian remains nearby and can be easily reached by phone.
             This is in the interests of safeguarding.
