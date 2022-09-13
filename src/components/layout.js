@@ -35,7 +35,7 @@ const Layout = ({ pageTitle, children }) => {
         }}
       >
         <main className="">{children}</main>
-        <footer className="text-center">
+        <footer className="text-center pt-2 pb-6">
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>

@@ -24,7 +24,7 @@ const Venue = () => {
         <StaticImage
           className="rounded"
           src="../images/library_map.jpeg"
-          alt="gatsby astronaut"
+          alt="Map of Bishops Cleeve"
         />
       </a>
     </section>

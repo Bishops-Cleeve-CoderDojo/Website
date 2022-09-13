@@ -19,6 +19,7 @@
     "gatsby-plugin-purgecss": "^6.1.2",
     "gatsby-plugin-react-helmet": "^5.18.0",
     "gatsby-plugin-sharp": "^4.18.0",
+    "gatsby-remark-images": "^6.22.0",
     "gatsby-source-filesystem": "^4.18.0",
     "gatsby-transformer-sharp": "^4.18.0",
     "postcss": "^8.4.14",

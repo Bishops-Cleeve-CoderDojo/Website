@@ -14,10 +14,10 @@ function Header({ siteTitle }) {
         <Link to={`/`} className="text-white">
           <div className="flex items-center flex-shrink-0">
             <StaticImage
-              className="mr-2"
+              className="mr-2 w-8"
               src="../images/Roundel.png"
-              width="30"
-              alt="gatsby astronaut"
+              width={32}
+              alt="Logo"
             />
             <span className="text-xl font-semibold tracking-tight">
               {siteTitle}
