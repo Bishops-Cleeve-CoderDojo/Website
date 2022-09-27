@@ -25,7 +25,15 @@ const Activities = () => {
           <p>
             Scratch is a tool for building your own games and animated stories.
             The simple drag and drop interface makes it easy to bring ideas to
-            life, and helps teach the building blocks of programming.
+            life, and helps teach the building blocks of programming. See some
+            of our Ninja's Scratch projects in our{' '}
+            <a
+              href="https://scratch.mit.edu/studios/32126251"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Scratch Studio
+            </a>.
           </p>
         </div>
         <div className="flex flex-col space-y-4 items-center">
