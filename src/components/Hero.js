@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { AiFillFacebook, AiFillTwitterSquare } from "react-icons/ai"
+import { AiFillFacebook, AiFillInstagram, AiFillTwitterSquare } from "react-icons/ai"
 
 const Hero = () => {
   return (
@@ -32,6 +32,14 @@ const Hero = () => {
           className="text-white"
         >
           <AiFillFacebook />
+        </a>
+        <a
+          href="https://www.instagram.com/coderdojobc/"
+          target="_blank"
+          rel="noreferrer"
+          className="text-white"
+        >
+          <AiFillInstagram />
         </a>
         <a
           href="https://twitter.com/CoderDojoBC"

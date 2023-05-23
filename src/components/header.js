@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React, { useState } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
-import { AiFillFacebook, AiFillTwitterSquare } from 'react-icons/ai'
+import { AiFillFacebook, AiFillInstagram, AiFillTwitterSquare } from 'react-icons/ai'
 
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false)
@@ -95,6 +95,14 @@ function Header({ siteTitle }) {
                 className="inline-block text-4xl leading-none text-white"
               >
                 <AiFillFacebook />
+              </a>
+              <a
+                href="https://www.instagram.com/coderdojobc/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-block text-4xl leading-none text-white"
+              >
+                <AiFillInstagram />
               </a>
               <a
                 href="https://twitter.com/CoderDojoBC"
