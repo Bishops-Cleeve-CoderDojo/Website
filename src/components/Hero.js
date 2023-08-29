@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { AiFillFacebook, AiFillInstagram, AiFillTwitterSquare } from "react-icons/ai"
+import { AiFillFacebook, AiFillInstagram } from "react-icons/ai"
 
 const Hero = () => {
   return (
@@ -12,7 +12,7 @@ const Hero = () => {
       />
       <h1 className="mb-4 font-medium lg:text-2xl">@ Bishops Cleeve</h1>
       <div className="lg:text-xl">
-        <p>A free coding club for children ages 7-17,</p>
+        <p>A free coding club for children ages 7-14,</p>
         <p>running every other Saturday 12.30-2.30pm,</p>
         <p>at the Bishops Cleeve Library, near Cheltenham, Gloucestershire.</p>
       </div>
@@ -40,14 +40,6 @@ const Hero = () => {
           className="text-white"
         >
           <AiFillInstagram />
-        </a>
-        <a
-          href="https://twitter.com/CoderDojoBC"
-          target="_blank"
-          rel="noreferrer"
-          className="text-white"
-        >
-          <AiFillTwitterSquare />
         </a>
       </div>
     </div>

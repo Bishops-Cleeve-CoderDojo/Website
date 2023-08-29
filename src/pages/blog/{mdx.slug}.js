@@ -62,13 +62,13 @@ const BlogPost = ({ data }) => {
             <p>
               For more club news and coding articles, follow us on{' '}
               <a
-                href="https://twitter.com/CoderDojoBC"
+                href="https://www.instagram.com/coderdojobc/"
                 target="_blank"
                 rel="noreferrer"
               >
-                Twitter
+                Instagram
               </a>{' '}
-              and{' '}
+              or{' '}
               <a
                 href="https://www.facebook.com/BishopsCleeveCoderDojo/"
                 target="_blank"
