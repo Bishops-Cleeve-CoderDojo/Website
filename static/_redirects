@@ -1,0 +1,16 @@
+# netlify redirects
+# from_url to_url
+
+# Menu Items
+
+/scratch        https://projects.raspberrypi.org/en/pathways/scratch-intro
+/web            https://projects.raspberrypi.org/en/pathways/web-intro
+/python         https://projects.raspberrypi.org/en/pathways/python-intro
+/unity          https://projects.raspberrypi.org/en/pathways/unity-intro
+
+/agent          https://projects.raspberrypi.org/en/projects/secret-agent-chat
+/rps            https://projects.raspberrypi.org/en/projects/rock-paper-scissors-by-hand/1
+
+/coolest        https://online.coolestprojects.org/
+/ai             https://www.survivalofthebestfit.com/game/ 
+/astro          https://astro-pi.org/

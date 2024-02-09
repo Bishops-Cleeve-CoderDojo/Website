@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `CoderDojo Bishops Cleeve`,
+    title: `Bishops Cleeve CoderDojo`,
     description: `.`,
-    author: `CoderDojo Bishops Cleeve`,
+    author: `Bishops Cleeve CoderDojo`,
   },
   flags: {
     THE_FLAG: false,
