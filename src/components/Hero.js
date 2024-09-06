@@ -13,7 +13,7 @@ const Hero = () => {
       <h1 className="mb-4 font-medium lg:text-2xl">@ Bishops Cleeve</h1>
       <div className="lg:text-xl">
         <p>A free coding club for children ages 7-14,</p>
-        <p>running every other Saturday 12.30-2.30pm,</p>
+        <p>running every other Saturday 1pm-2.30pm,</p>
         <p>at the Bishops Cleeve Library, near Cheltenham, Gloucestershire.</p>
       </div>
       <a
