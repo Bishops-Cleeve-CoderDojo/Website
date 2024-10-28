@@ -17,7 +17,7 @@ const Hero = () => {
         <p>at the Bishops Cleeve Library, near Cheltenham, Gloucestershire.</p>
       </div>
       <a
-        href="https://zen.coderdojo.com/dojos/gb/cheltenham/bishops-cleeve-bishops-cleeve-library"
+        href="https://codeclub.org/en/clubs/b05ca2dc-65c8-4501-bf67-869acc1773c9"
         target="_blank"
         rel="noreferrer"
         className="mt-4 text-white lg:mt-6 bg-[#ED684A] active:bg-pink-600 font-bold text-sm lg:text-base px-6 py-4 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 tracking-wider"
