@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai"
 
@@ -16,14 +17,22 @@ const Hero = () => {
         <p>running every other Saturday 1pm-2.30pm,</p>
         <p>at the Bishops Cleeve Library, near Cheltenham, Gloucestershire.</p>
       </div>
-      <a
-        href="https://codeclub.org/en/clubs/b05ca2dc-65c8-4501-bf67-869acc1773c9"
-        target="_blank"
-        rel="noreferrer"
-        className="mt-4 text-white lg:mt-6 bg-[#ED684A] active:bg-pink-600 font-bold text-sm lg:text-base px-6 py-4 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 tracking-wider"
-      >
-        Book a Session
-      </a>
+      <div className="flex space-x-2">
+        <a
+          href="https://codeclub.org/en/clubs/b05ca2dc-65c8-4501-bf67-869acc1773c9"
+          target="_blank"
+          rel="noreferrer"
+          className="mt-4 text-white lg:mt-6 bg-[#ED684A] active:bg-pink-600 font-bold text-sm lg:text-base px-6 py-4 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 tracking-wider"
+        >
+          Book a Session
+        </a>
+        <Link
+          to={`/blog/volunteers`}
+          className="mt-4 text-white lg:mt-6 bg-[#41BAC1] active:bg-pink-600 font-bold text-sm lg:text-base px-6 py-4 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 tracking-wider"
+        >
+          Volunteer
+        </Link>
+      </div>
       <div className="flex space-x-2 mt-2 text-4xl">
         <a
           href="https://www.facebook.com/BishopsCleeveCoderDojo/"
