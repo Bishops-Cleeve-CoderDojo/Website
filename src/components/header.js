@@ -76,7 +76,7 @@ function Header({ siteTitle }) {
               Venue
             </Link>
             <Link
-              to={`/blog`}
+              to={`/blog/volunteers`}
               className="text-white block mt-4 mx-4 lg:inline-block lg:mt-0"
             >
               Volunteer
