@@ -28,7 +28,7 @@ const About = () => {
             To book a place at an upcoming session, please click <a href="https://codeclub.org/en/clubs/b05ca2dc-65c8-4501-bf67-869acc1773c9" target="_blank" rel="noreferrer">here</a>.
           </p>
           <p>
-            Don't forget to follow us on Facebook and Twitter to keep up to date
+            Don't forget to follow us on Facebook and Instagram to keep up to date
             with the latest news and announcements from the Dojo.
           </p>
         </div>
