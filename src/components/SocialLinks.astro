@@ -1,0 +1,27 @@
+---
+import Facebook from './icons/Facebook.astro'
+import Instagram from './icons/Instagram.astro'
+
+const { class: className = '' } = Astro.props
+---
+
+<div class={className}>
+  <a
+    href="https://www.facebook.com/BishopsCleeveCoderDojo/"
+    target="_blank"
+    rel="noreferrer"
+    class="inline-block text-4xl leading-none text-white"
+    aria-label="Bishops Cleeve CoderDojo on Facebook"
+  >
+    <Facebook />
+  </a>
+  <a
+    href="https://www.instagram.com/coderdojobc/"
+    target="_blank"
+    rel="noreferrer"
+    class="inline-block text-4xl leading-none text-white"
+    aria-label="Bishops Cleeve CoderDojo on Instagram"
+  >
+    <Instagram />
+  </a>
+</div>

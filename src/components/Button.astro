@@ -1,0 +1,22 @@
+---
+// Pill-shaped call-to-action button. `colour` is 'orange' (primary) or 'teal'
+// (secondary). External links open in a new tab.
+const { href, colour = 'orange', external = false } = Astro.props
+
+const colours = {
+  orange: 'bg-dojo-orange',
+  teal: 'bg-dojo-teal',
+}
+---
+
+<a
+  href={href}
+  target={external ? '_blank' : undefined}
+  rel={external ? 'noreferrer' : undefined}
+  class:list={[
+    colours[colour],
+    'mt-4 lg:mt-6 text-white active:bg-pink-600 font-bold text-sm lg:text-base px-6 py-4 rounded-full shadow-sm hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 tracking-wider',
+  ]}
+>
+  <slot />
+</a>

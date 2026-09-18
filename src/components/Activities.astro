@@ -1,0 +1,71 @@
+---
+import { Image } from 'astro:assets'
+import scratch from '../images/scratch.jpg'
+import webapp from '../images/webapp.jpg'
+import pi from '../images/pi.jpg'
+import Button from './Button.astro'
+---
+
+<section id="activities" class="p-6 flex flex-col items-center space-y-4">
+  <h2>Activities</h2>
+  <p class="pb-4">
+    Here are a few examples of the sorts of things we do at CoderDojo.
+  </p>
+  <div class="grid grid-cols-1 gap-12 lg:grid-cols-3 text-justify px-4">
+    <div class="flex flex-col space-y-4 items-center">
+      <Image
+        src={scratch}
+        alt="Scratch Logo"
+        class="w-48 lg:w-44 h-auto rounded-2xl"
+      />
+      <h3>Learn to code with Scratch</h3>
+      <p>
+        Scratch is a tool for building your own games and animated stories. The
+        simple drag and drop interface makes it easy to bring ideas to life, and
+        helps teach the building blocks of programming. See some of our Ninja's
+        Scratch projects in our{' '}
+        <a
+          href="https://scratch.mit.edu/studios/32126251"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Scratch Studio
+        </a>
+        .
+      </p>
+    </div>
+    <div class="flex flex-col space-y-4 items-center">
+      <Image
+        src={webapp}
+        alt="A website viewed on a tablet"
+        class="w-48 lg:w-44 h-auto rounded-2xl"
+      />
+      <h3>Build websites &amp; apps</h3>
+      <p>
+        When you're ready for something more advanced, try building your own
+        website or app. This could be a game, something more practical, or
+        anything you can imagine!
+      </p>
+    </div>
+    <div class="flex flex-col space-y-4 items-center">
+      <Image
+        src={pi}
+        alt="A Raspberry Pi circuit board"
+        class="w-48 lg:w-44 h-auto rounded-2xl"
+      />
+      <h3>Hardware &amp; Robotics</h3>
+      <p>
+        In future Dojo sessions, we will look at using code outside of our
+        laptops, to create things like robots and musical instruments.
+      </p>
+    </div>
+  </div>
+  <p class="pt-6">
+    If you'd like to see the sorts of things we build (or if you'd like to give
+    them a try outside of the Dojo) click this button to find instructions for
+    hundreds of examples!
+  </p>
+  <Button href="https://projects.raspberrypi.org/en/projects" external>
+    CoderDojo Projects
+  </Button>
+</section>
