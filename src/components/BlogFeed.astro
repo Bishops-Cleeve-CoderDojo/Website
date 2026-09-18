@@ -1,5 +1,7 @@
 ---
 import { getCollection } from 'astro:content'
+import { Image } from 'astro:assets'
+import roundel from '../images/Roundel.png'
 import Button from './Button.astro'
 import { formatDate } from '../utils/utils'
 
@@ -10,13 +12,29 @@ const posts = (await getCollection('blog'))
 
 <section class="p-6 flex flex-col items-center bg-slate-100">
   <h2>Blog</h2>
-  <div class="py-4 grid grid-cols-1 gap-6 lg:grid-cols-3 text-justify">
+  <div class="py-4 grid grid-cols-1 gap-12 lg:grid-cols-3 px-4">
     {posts.map(post => (
-      <article class="text-center">
-        <h2>
-          <a href={`/blog/${post.id}`}>{post.data.title}</a>
-        </h2>
-        <p class="italic text-xs">{formatDate(post.data.date)}</p>
+      <article class="flex flex-col space-y-4 items-center text-center">
+        <a href={`/blog/${post.id}`}>
+          <Image
+            src={post.data.featuredImage ?? roundel}
+            alt=""
+            width={352}
+            height={352}
+            class:list={[
+              'w-48 lg:w-44 h-48 lg:h-44 object-cover rounded-2xl',
+              // The fallback logo is a transparent PNG, so give it a tile
+              // background and some padding to match the real images
+              !post.data.featuredImage && 'bg-white p-6',
+            ]}
+          />
+        </a>
+        <div>
+          <h2>
+            <a href={`/blog/${post.id}`}>{post.data.title}</a>
+          </h2>
+          <p class="italic text-xs">{formatDate(post.data.date)}</p>
+        </div>
       </article>
     ))}
   </div>

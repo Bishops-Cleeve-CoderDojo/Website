@@ -21,9 +21,10 @@ test.describe('Basic page rendering', () => {
 
     // Recent posts feed shows the newest 3 posts
     await expect(page.locator('section h2:has-text("Blog")')).toBeVisible()
-    await expect(page.locator('section article a[href^="/blog/"]')).toHaveCount(
-      3,
-    )
+    const feed = page.locator('section article')
+    await expect(feed).toHaveCount(3)
+    // Each card links to its post and shows a square featured image
+    await expect(feed.locator('a[href^="/blog/"] img')).toHaveCount(3)
   })
 
   test('blog listing page renders', async ({ page }) => {
