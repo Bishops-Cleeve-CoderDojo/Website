@@ -31,7 +31,10 @@ export default defineConfig({
   ],
 
   webServer: {
-    command: 'npm run preview',
+    // --ignore-lock stops Astro 7 backgrounding the preview server when it
+    // detects an AI agent (e.g. Claude Code) in the environment, which would
+    // otherwise make Playwright report the server as exited early.
+    command: 'npm run preview -- --ignore-lock',
     url: 'http://localhost:4322',
     reuseExistingServer: !process.env.CI,
   },
