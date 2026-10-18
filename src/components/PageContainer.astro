@@ -1,0 +1,9 @@
+---
+// White content card with a page heading, used by the blog index and 404 pages.
+const { pageTitle } = Astro.props
+---
+
+<h1 class="text-center pt-10 pb-4 text-3xl lg:text-4xl">{pageTitle}</h1>
+<div class="m-4 p-4 rounded-sm bg-white text-black">
+  <slot />
+</div>

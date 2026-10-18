@@ -1,37 +1,44 @@
-# CoderDojo Bishops Cleeve Website
+# Bishops Cleeve CoderDojo Website
 
-This is the source for the website of the Bishops Cleeve CoderDojo, a coding club for kids.  The site is currently hosted at https://bc-coderdojo.netlify.app
+This is the source for the website of the Bishops Cleeve CoderDojo, a free coding club for kids near Cheltenham, UK. The site is hosted at https://bccd.uk (via Netlify).
 
-The website is built with [Gatsby](https://www.gatsbyjs.com), and styled with [Tailwind CSS](https://tailwindcss.com).  
+The website is built with [Astro](https://astro.build), and styled with [Tailwind CSS](https://tailwindcss.com).
 
-If you are familiar with JavaScript and React (or you'd like to learn!), this repo could easily be forked to create a site for your own Dojo.
-
+If you'd like to make a site for your own Dojo, this repo could easily be forked.
 
 ## Developing
 
-Run the site locally with the standard gatsby command:
-
 ```shell
-cd my-default-starter/
-gatsby develop
+npm install
+npm run dev        # dev server at http://localhost:4322
+npm run build      # production build to dist/
+npm run preview    # serve the built site
+npm test           # build, then run the Playwright smoke tests
 ```
 
-## Updating the Main Page
+Before running the tests for the first time, install the browser:
 
-The main page content is split across a number of components.  In the future it would be good to move this data into config or to files in the `src` folder.
+```shell
+npx playwright install chromium
+```
 
-## Updating the Blog
+## Updating the main page
 
-Blog posts can be found under `src/blog/`
+The main page is assembled from the section components in `src/components/`. Each section's text is written directly in its component, so to change the copy, edit the component.
 
-## 🎓 Learning Gatsby
+## Updating the blog
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+Blog posts live in `src/content/blog/`, one markdown file per post. A post with images goes in its own folder (`src/content/blog/<name>/index.md`) with the images alongside it.
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+Frontmatter:
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+```yaml
+---
+title: 'Autumn Term 2026'
+date: '2026-09-01'
+author: 'Andy B'
+featuredImage: './photo.jpg' # optional
+---
+```
 
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kosvrouvas/gatsby-tailwindcss-starter)
+Posts are listed newest first, and the three most recent appear on the home page.

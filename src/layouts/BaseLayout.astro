@@ -1,0 +1,77 @@
+---
+import Header from '../components/Header.astro'
+import '../styles/global.css'
+
+const siteTitle = 'Bishops Cleeve CoderDojo'
+const defaultDescription =
+  'A free coding club for children aged 7-14, at Bishops Cleeve Library near Cheltenham, Gloucestershire.'
+
+const { pageTitle, description = defaultDescription } = Astro.props
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>{pageTitle} | {siteTitle}</title>
+    <link rel="canonical" href={Astro.url.href} />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content={siteTitle} />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-linear-to-br from-purple-900 via-purple-500 to-purple-900 text-slate-50 min-h-screen">
+    <Header siteTitle={siteTitle} />
+    <div class="max-w-[960px] mx-auto">
+      <main>
+        <slot />
+      </main>
+      <footer class="text-center pt-2 pb-6">
+        © {new Date().getFullYear()}, Built with
+        <a href="https://astro.build">Astro</a>
+      </footer>
+    </div>
+
+    <!--
+      Service worker cleanup. The old Gatsby site registered a service worker
+      (gatsby-plugin-offline) which caches pages aggressively, so visitors who
+      have been to the site before would otherwise keep seeing the old version.
+      This unregisters any service worker and clears all caches. public/sw.js
+      is the matching kill switch. Both can be removed once the migration has
+      been live for a while.
+    -->
+    <script is:inline>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .getRegistrations()
+          .then(function (registrations) {
+            for (const registration of registrations) {
+              registration.unregister()
+            }
+          })
+
+        if ('caches' in window) {
+          caches.keys().then(function (cacheNames) {
+            cacheNames.forEach(function (cacheName) {
+              caches.delete(cacheName)
+            })
+          })
+        }
+      }
+    </script>
+  </body>
+</html>

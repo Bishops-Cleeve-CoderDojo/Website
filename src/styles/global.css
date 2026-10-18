@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+
+@theme {
+  --font-sans: 'Lato', sans-serif;
+
+  /* CoderDojo brand colours */
+  --color-dojo-orange: #ed684a;
+  --color-dojo-teal: #41bac1;
+}
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl font-bold text-zinc-600;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  a {
+    @apply text-dojo-orange;
+  }
+}

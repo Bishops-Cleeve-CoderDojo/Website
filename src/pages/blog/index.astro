@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import PageContainer from '../../components/PageContainer.astro'
+import { formatDate } from '../../utils/utils'
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+)
+---
+
+<BaseLayout pageTitle="Blog">
+  <PageContainer pageTitle="Blog">
+    {posts.map(post => (
+      <article class="py-2 text-center">
+        <h2>
+          <a href={`/blog/${post.id}`}>{post.data.title}</a>
+        </h2>
+        <p class="italic">{formatDate(post.data.date)}</p>
+      </article>
+    ))}
+  </PageContainer>
+</BaseLayout>

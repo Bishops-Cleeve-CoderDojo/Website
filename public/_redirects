@@ -1,0 +1,32 @@
+# netlify redirects
+# from_url to_url
+
+# Menu Items
+
+/scratch        https://projects.raspberrypi.org/en/pathways/scratch-intro
+/web            https://projects.raspberrypi.org/en/pathways/web-intro
+/python         https://projects.raspberrypi.org/en/pathways/python-intro
+/unity          https://projects.raspberrypi.org/en/pathways/unity-intro
+
+/agent          https://projects.raspberrypi.org/en/projects/secret-agent-chat
+/rps            https://projects.raspberrypi.org/en/projects/rock-paper-scissors-by-hand/1
+
+/coolest        https://online.coolestprojects.org/
+/ai             https://www.survivalofthebestfit.com/game/
+/astro          https://astro-pi.org/
+
+# Old top-level post URLs from the Gatsby site (gatsby-plugin-page-creator)
+
+/hello-world        /blog/hello-world       301
+/were-back          /blog/were-back         301
+/return             /blog/return            301
+/christmas-2022     /blog/christmas-2022    301
+/autumn-term-2023   /blog/autumn-term-2023  301
+/winter-term-2024   /blog/winter-term-2024  301
+/autumn-term-2024   /blog/autumn-term-2024  301
+/winter-term-2025   /blog/winter-term-2025  301
+/autumn-term-2026   /blog/autumn-term-2026  301
+
+# The volunteers page used to be a blog post
+
+/blog/volunteers    /volunteers             301

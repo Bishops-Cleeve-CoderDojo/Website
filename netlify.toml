@@ -1,0 +1,5 @@
+# Build settings here override the ones in the Netlify UI. Node version comes
+# from .nvmrc, and redirects live in public/_redirects.
+[build]
+command = "npm run build"
+publish = "dist"

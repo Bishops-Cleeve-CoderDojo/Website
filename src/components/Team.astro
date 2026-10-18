@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets'
+import volunteer from '../images/volunteer.png'
+---
+
+<section
+  id="team"
+  class="p-8 flex flex-col items-center text-justify space-y-4 bg-slate-100"
+>
+  <h2>Team</h2>
+  <div class="flex justify-between items-center">
+    <div class="flex-1 flex flex-col space-y-4">
+      <p class="w-full">
+        Bishops Cleeve CoderDojo is run by a group of local volunteers, with
+        many years of technology experience between them.
+      </p>
+      <p>
+        If you are interested in volunteering to help out, please get in touch.
+        We're always in need of an extra hand, and you don't need to have a
+        technical background.
+      </p>
+    </div>
+    <div class="hidden lg:block mx-8 mt-[-30px] w-56 max-h-52 overflow-hidden">
+      <Image
+        src={volunteer}
+        alt="A cartoon of CoderDojo attendees"
+        class="w-full h-auto"
+      />
+    </div>
+  </div>
+</section>
