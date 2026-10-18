@@ -17,7 +17,6 @@
 
 # Old top-level post URLs from the Gatsby site (gatsby-plugin-page-creator)
 
-/volunteers         /blog/volunteers        301
 /hello-world        /blog/hello-world       301
 /were-back          /blog/were-back         301
 /return             /blog/return            301
@@ -27,3 +26,7 @@
 /autumn-term-2024   /blog/autumn-term-2024  301
 /winter-term-2025   /blog/winter-term-2025  301
 /autumn-term-2026   /blog/autumn-term-2026  301
+
+# The volunteers page used to be a blog post
+
+/blog/volunteers    /volunteers             301

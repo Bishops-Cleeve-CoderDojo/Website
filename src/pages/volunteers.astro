@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Banner from '../components/Banner.astro'
+import banner from '../images/volunteers-banner.jpeg'
+import { Content, frontmatter } from '../content/volunteers.md'
+---
+
+<BaseLayout pageTitle={frontmatter.title}>
+  <div class="m-4 overflow-hidden rounded-sm bg-white text-black">
+    <Banner title={frontmatter.title} image={banner} />
+
+    <div class="max-w-2xl mx-auto p-4">
+      <article class="prose prose-slate pt-2 pb-6 mx-auto">
+        <Content />
+      </article>
+    </div>
+  </div>
+</BaseLayout>

@@ -40,16 +40,32 @@ test.describe('Basic page rendering', () => {
   })
 
   test('individual blog post renders', async ({ page }) => {
-    await page.goto('/blog/volunteers')
+    await page.goto('/blog/hello-world')
 
-    await expect(page).toHaveTitle(/Volunteering at CoderDojo/)
-    await expect(page.locator('h1').first()).toHaveText(
-      'Volunteering at CoderDojo',
-    )
+    await expect(page).toHaveTitle(/Hello, world!/)
+    await expect(page.locator('h1').first()).toHaveText('Hello, world!')
     await expect(page.locator('article')).toBeVisible()
     await expect(
       page.getByRole('link', { name: /back to blog index/i }),
     ).toBeVisible()
+  })
+
+  test('volunteers page renders', async ({ page }) => {
+    await page.goto('/')
+    await page.locator('nav').getByRole('link', { name: 'Volunteer' }).click()
+
+    await expect(page).toHaveURL(/\/volunteers$/)
+    await expect(page).toHaveTitle(/Volunteering at CoderDojo/)
+    await expect(page.locator('h1').first()).toHaveText(
+      'Volunteering at CoderDojo',
+    )
+    await expect(
+      page.getByRole('heading', { name: 'Applying to Volunteer' }),
+    ).toBeVisible()
+    // It's a page now, not a post
+    await expect(
+      page.getByRole('link', { name: /back to blog index/i }),
+    ).toHaveCount(0)
   })
 
   test('blog post with inline image renders it', async ({ page }) => {

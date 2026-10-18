@@ -1,8 +1,5 @@
 ---
 title: 'Volunteering at CoderDojo'
-date: '2022-01-01'
-author: 'Andy B'
-featuredImage: './Designer-62.jpeg'
 ---
 
 Interested in volunteering with Bishops Cleeve CoderDojo? Thank you! This page tells you all you need to know.
@@ -27,7 +24,7 @@ The sessions run every other week at the Bishops Cleeve Library, from 1.00pm to 
 
 We use WhatsApp to organise who will be helping out at each session, so you will need to provide a mobile number we can add to our group.
 
-All mentors need to be DBS checked. We ask volunteers to sign up to the STEM Amabassodors scheme, who will provide this check free of charge.
+All mentors need to be DBS checked. We ask volunteers to sign up to the STEM Ambassadors scheme, who will provide this check free of charge.
 
 ## How you benefit
 
@@ -42,15 +39,15 @@ If you'd like to get involved, please visit our club's page on the [Code Club pl
 
 We'll then invite you to join us for part of an upcoming session, to give you the opportunity to see how the club runs for yourself, and ask any questions.
 
-Following this, we'll ask you to read through some training information and join the STEM Abmassadors scheme, so we can sign you up as an official volunteer!
+Following this, we'll ask you to read through some training information and join the STEM Ambassadors scheme, so we can sign you up as an official volunteer!
 
-If you have any questions, please do get in touch via [email](mailto:bishopscleeve.uk@coderdojo.com)
+If you have any questions, please do get in touch via [email](mailto:bishopscleeve.uk@coderdojo.com).
 
 ## Resources
 
 Here's a list of useful links and resources for club mentors:
 
-- [The Code Club guide to runnning a club](https://codeclub.org/en/run-a-club)
+- [The Code Club guide to running a club](https://codeclub.org/en/run-a-club)
 - [Further Code Club resources](https://codeclub.org/en/resources)
 - [The Code Club Charter](https://assets.ctfassets.net/zsyyd4yzh6xx/2pJzjgwtEwYwZ5L6MUPnI5/5b63d4fa7211cfc1b91f746f5536846e/Code_Club_Charter.pdf)
 - [The Code Club Slack Channel](https://codeclub.org/en/slack)

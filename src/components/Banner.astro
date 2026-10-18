@@ -1,0 +1,28 @@
+---
+// Purple heading banner with an optional darkened background image, used at
+// the top of blog posts and the volunteers page. Anything in the slot is shown
+// as a small subtitle under the heading.
+import { Image } from 'astro:assets'
+
+const { title, image } = Astro.props
+---
+
+<div class="grid h-48 lg:h-52">
+  <div class="row-start-1 col-start-1 bg-purple-900 h-48 lg:h-52"></div>
+  {image && (
+    <Image
+      src={image}
+      width={1024}
+      alt=""
+      class="row-start-1 col-start-1 w-full h-48 lg:h-52 object-cover brightness-50"
+    />
+  )}
+  <div class="row-start-1 col-start-1 relative flex flex-col justify-end">
+    <h1 class="text-center text-white pt-10 pb-2 text-3xl lg:text-4xl">
+      {title}
+    </h1>
+    <h2 class="text-xs text-slate-200 font-normal text-center pb-8">
+      <slot />
+    </h2>
+  </div>
+</div>

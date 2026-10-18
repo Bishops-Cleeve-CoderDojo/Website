@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content'
 import { Image } from 'astro:assets'
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import Banner from '../../components/Banner.astro'
 import roundel from '../../images/Roundel.png'
 import { formatDate } from '../../utils/utils'
 
@@ -20,25 +21,9 @@ const { title, author, date, featuredImage } = post.data
 
 <BaseLayout pageTitle={title}>
   <div class="m-4 overflow-hidden rounded-sm bg-white text-black">
-    <div class="grid h-48 lg:h-52">
-      <div class="row-start-1 col-start-1 bg-purple-900 h-48 lg:h-52"></div>
-      {featuredImage && (
-        <Image
-          src={featuredImage}
-          width={1024}
-          alt=""
-          class="row-start-1 col-start-1 w-full h-48 lg:h-52 object-cover brightness-50"
-        />
-      )}
-      <div class="row-start-1 col-start-1 relative flex flex-col justify-end">
-        <h1 class="text-center text-white pt-10 pb-2 text-3xl lg:text-4xl">
-          {title}
-        </h1>
-        <h2 class="text-xs text-slate-200 font-normal text-center pb-8">
-          Posted by {author} on {formatDate(date)}
-        </h2>
-      </div>
-    </div>
+    <Banner title={title} image={featuredImage}>
+      Posted by {author} on {formatDate(date)}
+    </Banner>
 
     <div class="max-w-2xl mx-auto p-4">
       <article class="prose prose-slate pt-2 pb-6 mx-auto">
